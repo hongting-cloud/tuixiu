@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html data-page-node-id="jaFJWCFyvf1WTetFdMqHom" lang="zh-CN">
+<head data-page-node-id="Y00vQ4e2tEg0eI3Mc1UY1R">
+<script data-page-node-id="pJdyyYSmu88aseVghjzBgk" src="/page/page_comm/inject.js"></script>
+<meta data-page-node-id="CssGxbRiEkkRBHfykJTpnJ" charset="utf-8">
+<meta data-page-node-id="wB74hURbw367QVoBfgIdCP" content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+<title data-page-node-id="KUfOjU9aBANWl8QtzCWoF6" data-pnid-children="NUVx02Ivnw090JuaIOnWba">退休城市匹配 · 你该去哪躺平</title>
+<style data-page-node-id="YGqLNpjSCIPbaE3nnOJeGw" data-pnid-children="3eORXjVyvb046FbvSiWpdW">
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{background:#20444A;color:#FFF7E8;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:430px;margin:0 auto;padding:22px 18px 60px}
+.card{background:#FFFDF6;color:#26333A;border:3px solid #1E3C42;border-radius:18px;box-shadow:6px 6px 0 rgba(0,0,0,.35);padding:24px 20px;margin-bottom:16px}
+h1{font-size:26px;font-weight:900;letter-spacing:1px;line-height:1.3;color:#FFF7E8}
+.sub{font-size:13px;color:#B8D8D2;margin-top:8px;line-height:1.7}
+.btn{display:block;width:100%;padding:16px;border:3px solid #1E3C42;border-radius:14px;background:#FFC85C;color:#26333A;font-size:17px;font-weight:900;cursor:pointer;box-shadow:4px 4px 0 rgba(0,0,0,.35);margin-top:20px;font-family:inherit}
+.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.35)}
+.ghost{background:#FFFDF6}
+.bar{height:10px;background:#E4E0D2;border-radius:99px;overflow:hidden;margin:14px 0 20px}
+.bar i{display:block;height:100%;background:#FF8A5C;border-radius:99px;transition:width .25s}
+.qn{font-size:12px;color:#9A948A;font-weight:700}
+.qt{font-size:19px;font-weight:900;line-height:1.5;margin-top:4px}
+.opt{display:block;width:100%;text-align:left;padding:14px 16px;border:2.5px solid #1E3C42;border-radius:12px;background:#FFFDF6;color:#26333A;font-size:15px;line-height:1.55;margin-top:12px;cursor:pointer;font-family:inherit}
+.opt:active{background:#FFF0C8}
+.hero{border-radius:16px;padding:26px 18px;text-align:center;color:#FFF7E8;position:relative;overflow:hidden}
+.scene{margin:-6px 0 14px}
+.scene svg{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.hero .bg1{position:absolute;inset:0;opacity:.96}
+.hero .in{position:relative}
+.fit{font-size:46px;font-weight:900;line-height:1}
+.city{font-size:30px;font-weight:900;margin-top:6px}
+.ctag{font-size:13px;margin-top:6px;opacity:.9}
+.sec{font-size:14px;font-weight:900;margin:22px 0 10px;padding-left:10px;border-left:5px solid #FF8A5C;color:#26333A}
+.sym{border:2.5px solid #1E3C42;border-radius:12px;padding:11px 14px;font-size:14px;line-height:1.6;margin-bottom:9px;background:#FFFDF6}
+.day{display:flex;gap:10px;margin-bottom:8px}
+.day .t{flex-shrink:0;font-size:12px;font-weight:900;color:#FFF7E8;background:#2A6B6E;border-radius:8px;padding:4px 8px}
+.day .d{font-size:14px;line-height:1.5;padding-top:2px}
+.food{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.food span{font-size:13px;font-weight:700;padding:5px 12px;border-radius:99px;background:#FFE9B8;border:2px solid #1E3C42}
+.duo{display:flex;gap:10px;margin-top:8px}
+.duo>div{flex:1;border:2.5px solid #1E3C42;border-radius:12px;padding:11px;font-size:13px;line-height:1.55;background:#FFFDF6}
+.duo b{font-size:15px}
+.warn{background:#FDE8DC!important;border-color:#C4502E!important}
+.share{background:#1E3C42;color:#FFF7E8;border-radius:16px;padding:22px 18px;text-align:center;margin-top:20px}
+.share .s1{font-size:12px;opacity:.7;letter-spacing:2px}
+.share .s2{font-size:24px;font-weight:900;margin-top:10px}
+.share .s3{font-size:14px;margin-top:10px;opacity:.85}
+.share .s4{font-size:11px;margin-top:14px;opacity:.5}
+.foot{text-align:center;font-size:11px;color:#8FB5AE;margin-top:26px;line-height:1.8}
+.hide{display:none}
+
+/* ===== 激活码门禁 ===== */
+#gate{position:fixed;inset:0;background:#FFF8E7;z-index:9999;overflow-y:auto;display:flex;align-items:center;justify-content:center;padding:20px}
+#gate.ghide{display:none!important}
+.gcard{max-width:430px;width:100%;background:#fff;border:2px dashed #E8A33D;border-radius:18px;padding:28px 20px;text-align:center;box-shadow:0 10px 30px rgba(160,110,30,.18)}
+.gtitle{font-weight:800;font-size:17px;color:#7A4A12;margin:6px 0 8px}
+.gdesc{font-size:13px;color:#7A6A50;line-height:1.7}
+.grow{display:flex;gap:8px;margin:16px 0 4px}
+.grow input{flex:1;min-width:0;border:1.5px solid #E8A33D;border-radius:10px;padding:11px 12px;font-size:14px;outline:none;color:#4A3315;background:#fff}
+.grow button{border:none;background:linear-gradient(135deg,#F0A63C,#D97E1E);color:#fff;border-radius:10px;padding:11px 22px;font-weight:700;font-size:14.5px;white-space:nowrap}
+.gerr{color:#C0392B;font-size:12px;min-height:16px;margin-top:2px}
+.gbuy{font-size:12px;color:#B07A2A;margin-top:8px;line-height:1.6}
+</style>
+</head>
+<body data-page-node-id="Mp3bztiBRwXXxVqyKluuhQ">
+<div data-page-node-id="WFXYsXD7v3TSjQZAi3sqdN" class="wrap">
+
+<div data-page-node-id="AkaOo9wkNMXnnCA83XT2W1" id="pHome">
+  <div data-page-node-id="sfajgldICTEhQBN1dqVbMZ" class="card" style="background:transparent; border-color:rgba(255,247,232,.4); color:#FFF7E8">
+    <h1 data-page-node-id="joXJgoWKNZGaOUV2aLAbJZ"><!--pnid:ZtQnQig2WuDKksrKeIA1mk-->退休城市匹配</h1>
+    <div data-page-node-id="cdtvBgdGEFblcanVwXAQjN" class="sub"><!--pnid:7wR6SjlJIJ9ROVyi7A5F0t-->不上班的日子，你该在哪座城市度过？<br data-page-node-id="iVepdquVOpHlj93ffdKLj3"><!--pnid:OVyatNfT0PSpiB4wN9vUvf-->24 道 lifestyle 题 × 18 座候选城市，从气候、节奏、物价、口味、烟火气等八个维度算出你的本命城市——附退休的一天日程表。</div>
+    <button data-page-node-id="J7BxInwUtOCMJAuVZmlseV" class="btn" onclick="start()"><!--pnid:rWFKTlhoKEdBgZhrWfKW0m-->开始匹配 · 24 题</button>
+    <button data-page-node-id="Th4NeXDFO9UPFDd3bZOrql" class="btn ghost" onclick="alert('娱乐向测试，按你的生活方式偏好匹配城市印象，不做任何投资或迁居建议。')"><!--pnid:IS9Sce7mJyQSn5Hduou2Ih-->这测的啥？</button>
+  </div>
+</div>
+
+<div data-page-node-id="j5JIx98UkOMXJZudZW58Ah" class="hide" id="pQuiz">
+  <div data-page-node-id="M5frtg6EAZQiPuS4DvW3QJ" class="card">
+    <div data-page-node-id="BDwxeA83y35KDebCccBinD" class="qn" id="qNum"></div>
+    <div data-page-node-id="eq16ryvrZUWigvh2a6sn52" class="bar"><i data-page-node-id="kyIV4TatTIrGxIt7RXFCaP" id="qBar" style="width:4%"></i></div>
+    <div data-page-node-id="zENCdHP5BPRhQUJCCexJEY" class="qt" id="qText"></div>
+    <div data-page-node-id="rxCUfrIPyfQYOEDKXw3QjC" id="qOpts"></div>
+  </div>
+</div>
+
+<div data-page-node-id="gF3GDjIelqMrmKVJSx9xMu" class="hide" id="pResult">
+  <div data-page-node-id="5Bh8bRrPW4gKlM9WojXc0l" class="hero" id="hero">
+    <div data-page-node-id="s7zl58r2IpiErPhclRDCGh" class="bg1" id="heroBg"></div>
+    <div data-page-node-id="1r2f8mPY7UjgnkZ1A899FG" class="in">
+      <div data-page-node-id="0Kv4AaN6R5iQ8sKUlEa9u8" class="scene" id="rScene"></div>
+      <div data-page-node-id="scNXDRB39ucAv7yMqEVmTX" style="font-size:12px; letter-spacing:3px; opacity:.8"><!--pnid:prMb0fv0X2xOQnlyqaO4QX-->你的退休本命城市</div>
+      <div data-page-node-id="1s3Fm88aGA6antVMJ4xnHi" class="city" id="rCity"></div>
+      <div data-page-node-id="i75rhsn0cmhCdC2VoEj8RH" class="ctag" id="rTag"></div>
+      <div data-page-node-id="GcpAYBeCVaZTHiccHTOu3W" class="fit" id="rFit" style="margin-top:14px"></div>
+      <div data-page-node-id="6wjVigG95OKT6OkE0URswB" style="font-size:12px; opacity:.8"><!--pnid:VRxivHWEvwIlCGaChsxR1R-->生活方式适配度</div>
+    </div>
+  </div>
+  <div data-page-node-id="ZvvhQmO3S3uT1SxbndtEdK" class="card">
+    <div data-page-node-id="ybFXkNhpQySNSbmWg89jJI" class="sec"><!--pnid:MeWGTf6Zod0HFcQaHR04U2-->为什么是这里 · 三个理由</div>
+    <div data-page-node-id="LAQPC0gLl6Wii7y221IwIz" id="rWhy"></div>
+    <div data-page-node-id="AYujMgx0upkdidQyn1ltNJ" class="sec"><!--pnid:l72CyUDlHjqBTzbdSpU1XX-->你在这些城市的一天</div>
+    <div data-page-node-id="ECyhh28MNhPDmO1Hwd3ltF" id="rDay"></div>
+    <div data-page-node-id="vidzllnIFZdqbQBB9tjVog" class="sec"><!--pnid:7xnXCPRj2weHfAgt1bp9wO-->本地快乐清单</div>
+    <div data-page-node-id="By5MGogXnM8b4gYTTQpusN" class="food" id="rFood"></div>
+    <div data-page-node-id="XEd2vH2aYWdLspCH1Qd5l4" class="sec" style="margin-top:18px"><!--pnid:AHtZlOlh6jyhJhdYODJfEt-->物价印象</div>
+    <div data-page-node-id="hxzTHfKsiABiZqeb7P6TfU" class="sym" id="rCost" style="background:#FFF0C8"></div>
+  </div>
+  <div data-page-node-id="rQ05cVWy0xOfgJFGKYTCqR" class="card">
+    <div data-page-node-id="MeurGzeCGaQaylAuHBncOq" class="sec"><!--pnid:jSnbLt7H4DFuidQdukSEOP-->备选城市 · 气味相近</div>
+    <div data-page-node-id="WKaFZF65nv2Ppr0dP8TUnh" class="duo"><div data-page-node-id="V97xuZHAa0FsD6BKAGcdXO"><b data-page-node-id="rqZ11evUffAtgahpZPa8IO" id="rAlt"></b><br data-page-node-id="qXGQC3qnjJkSf4oFo03sc0"><span data-page-node-id="BQAzqMZaWw8SoM9XtTs3dV" id="rAltNote" style="color:#6E7A80"></span></div><div data-page-node-id="If0GOrDQhRKnP0Vun8dLzM"><b data-page-node-id="RvT5SbgPRYhupg9dOGoabY" id="rAlt2"></b><br data-page-node-id="Xj87hpQf8GpxrefwhLbVAA"><span data-page-node-id="rg6U8HgdtispszLhPRI37K" id="rAlt2Note" style="color:#6E7A80"></span></div></div>
+    <div data-page-node-id="FiOhPHbzkMJC4FGwiSzYKa" class="sec" style="margin-top:18px"><!--pnid:5doHSPQ4AIl3r8hUjluSw3-->慎入预警 · 别去这里躺</div>
+    <div data-page-node-id="TsWZUUN6jKbOLra6SR6zPb" class="sym warn" id="rWarn"></div>
+    <div data-page-node-id="iUN9QvdDUjXpSQzu3rm9Ll" class="share">
+      <div data-page-node-id="uyrJflf3x9ACGxcrkPQYkt" class="s1"><!--pnid:okOTV2heGIkYPH7Xg2Mfrp-->RETIRE CITY MATCH</div>
+      <div data-page-node-id="6hvCeRD4ZsQPMMFCbNPuBF" class="s2" id="scName"></div>
+      <div data-page-node-id="VxHHOb6yZgsIsqIBhHdxg0" class="s3" id="scLine"></div>
+      <div data-page-node-id="lmKvRhPHt6JpC74zqNpsbn" class="s4" id="scFit"></div>
+    </div>
+    <button data-page-node-id="LhxmWu1ocwZnV9PjJrpfeX" class="btn" onclick="shareIt()"><!--pnid:6dxGZNqGZbp74q9ri172me-->截图 · 找你的退休搭子</button>
+  </div>
+  <div data-page-node-id="kZUO6UoQZZ5obErSJ5k3Hj" class="foot"><!--pnid:biAPHXMSTLgdpXyJtwWXEQ-->本测试为娱乐内容 · 城市印象为民间口碑非统计数据<br data-page-node-id="rM5c7yitsK6zxCA7Hj9a9Z"><!--pnid:3EkGsmk6rq4biAdgnsTb94-->不构成任何迁居、置业或投资建议</div>
+</div>
+
+</div>
+<script data-page-node-id="urjSmwJXANfvBbkA0GO52m" data-pnid-children="1YQlCjDaDLbYlJecr6Bz03">
+/* ========= 18 座候选城市 ========= */
+/* 八维向量 [海滨/内陆, 热闹/清静, 便利贵/便宜, 暖/凉, 文艺/市井, 都市/自然, 慢/快, 清淡/重口] */
+var CITIES=[
+ {n:"大理",g:"#7C5CBF",g2:"#4A3480",tag:"风花雪月，躺平界耶路撒冷",
+  v:[-2,-2,-1,1,2,-2,2,0],
+  why:["你要的「清静+文艺」，大理是满分答卷——洱海边发呆不算浪费时间，算主业。","内陆四季如春，夏天盖被子，冬天晒太阳，空调钱全省。","租房市场成熟，数字游民和退休搭子都多，一个人来也不会孤独。"],
+  day:["睡到自然醒，去才村码头看洱海","下午人民路上喝咖啡，蹭一场免费的落日","晚上古城遛弯，和摊主聊今天的云"],
+  food:["乳扇","酸辣鱼","野生菌火锅"],
+  cost:"中等偏低。房租便宜房源多，菜价看季节，菌子季可以实现自由。"},
+ {n:"成都",g:"#E85D3A",g2:"#B23A20",tag:"退休也要有火锅的自由",
+  v:[-2,2,1,0,1,2,1,-2],
+  why:["你选了烟火气满分的生活——成都的退休局，比你上班时还忙。","茶馆、麻将、公园相亲角……你可以在人民公园坐一天不重样。","医疗资源全国前列，华西在你身边，退休的底气就是它。"],
+  day:["早上去菜市场挑最新鲜的豌豆尖","下午茶馆里掏耳朵+麻将二选一","晚上火锅串串，微辣是最后的倔强"],
+  food:["火锅","冒烤鸭","蛋烘糕"],
+  cost:"中等。房租温和，吃的便宜，医疗方便，是便利和物价的黄金交叉点。"},
+ {n:"昆明",g:"#3E9B6E",g2:"#1F6B48",tag:"四季如春，气候躺赢",
+  v:[-2,0,0,1,1,0,1,1],
+  why:["你的天气诉求写得很明白：不冷不热——昆明全年15-25℃，这题它闭眼赢。","花市按公斤买花，鲜花自由是你退休的第一份工资。","高原紫外线强但空气通透，蓝天浓度常年超标。"],
+  day:["早上去篆新农贸市场，顺路买一抱鲜花","下午翠湖边看红嘴鸥（冬天限定）","晚上吃一顿菌子火锅，鲜掉眉毛"],
+  food:["过桥米线","鲜花饼","汽锅鸡"],
+  cost:"中等偏低。生活成本友好，就是干季记得多喝水。"},
+ {n:"威海",g:"#3E7FC1",g2:"#1F5490",tag:"北方海岸线，干净到发光",
+  v:[2,-1,0,-2,-1,0,1,1],
+  why:["你要海，又受不了闷热——威海夏天26℃，海风自带冷却外挂。","全国有名的干净城市，街道能当镜子照。","海鲜论盆吃，晚上的灯塔和无人沙滩都归你。"],
+  day:["清晨去海边赶海，挖蛤蜊顺带健身","下午环海路骑行，一路都是屏保级海景","晚上海鲜市场现买现做，配啤酒"],
+  food:["鲅鱼饺子","海肠捞饭","蛤蜊"],
+  cost:"低。物价友好，海景房租金比想象中便宜得多。"},
+ {n:"北海",g:"#F0A03C",g2:"#C4701C",tag:"候鸟老人的秘密基地",
+  v:[2,0,-1,2,-1,-2,1,1],
+  why:["你要暖+海+便宜的三重奏——北海是退休性价比之王。","冬天20℃+，全国银发族冬天集体迁徙目的地，搭子浓度极高。","海鲜便宜到怀疑人生，侨港风情街吃一个月不重样。"],
+  day:["早上银滩散步，沙细到怀疑到了海南","下午老街骑楼底下喝糖水","晚上侨港吃炒螺，吹着海风"],
+  food:["侨港糖水","虾饼","沙虫汤"],
+  cost:"低。房租白菜价，是预算型退休的顶配答案。"},
+ {n:"珠海",g:"#3E9BB5",g2:"#1F6B85",tag:"花园城市，精致养老",
+  v:[2,0,2,2,0,1,1,1],
+  why:["你既要便利又要暖——珠海是珠三角里最舒服的那个，港珠澳大桥直达。","情侣路全程海景，散步散步着就走了十公里。","城市干净+医疗好+离港澳近，精致退休的教科书。"],
+  day:["早上情侣路骑行，看澳门方向的日出","下午海滨公园喂鸽子，顺路喝早茶","晚上拱北口岸附近吃海鲜"],
+  food:["横琴蚝","膏蟹","斗门海鲜"],
+  cost:"中等偏高。房价是硬伤，但宜居度和便利度也是真金白银。"},
+ {n:"贵阳",g:"#5E8C3E",g2:"#3C6424",tag:"中国凉都，山里的空调城",
+  v:[-2,1,-1,-2,0,-1,1,-1],
+  why:["你最怕热——贵阳夏天22℃，是全国避暑锦标赛常驻冠军。","山环水绕，出门就是公园，酸汤鱼开胃神汤常驻。","物价低，夜市文化发达，退休工资在这里很经花。"],
+  day:["早上黔灵山看猴子，顺路暴汗","下午花溪湿地发呆，看水转","晚上二七路小吃街，从街头吃到街尾"],
+  food:["酸汤鱼","肠旺面","丝娃娃"],
+  cost:"低。物价是它的招牌，就是冬天湿冷，记得备电热毯。"},
+ {n:"西双版纳",g:"#2E9B7C",g2:"#1A6B52",tag:"全年盛夏，雨林造梦",
+  v:[-2,0,-1,2,0,-2,2,0],
+  why:["你要全年夏天——版纳一月也有25℃，羽绒服是什么没听说过。","雨林、大象、泼水节，退休生活过成度假。","夜市+热带水果自由，菠萝蜜当零食吃。"],
+  day:["早上总佛寺听经，看金塔发光","下午中科院植物园，一眼一植物","晚上星光夜市，烧烤配百香果汁"],
+  food:["菠萝饭","香茅草烤鱼","泡鲁达"],
+  cost:"低。物价友好，但雨季潮，怕潮星人慎选。"},
+ {n:"长沙",g:"#D4426A",g2:"#9C2450",tag:"退休版不夜城",
+  v:[-2,2,0,0,0,2,-1,-2],
+  why:["你选了热闹——长沙的夜生活到凌晨两点，退休了也不用早睡。","茶颜悦色+文和友+解放西，快乐浓度全国第一梯队。","医疗好、交通好、物价还行，是热闹派的全能选项。"],
+  day:["早上嗦一碗肉丝粉，微辣起步","下午橘子洲头暴走，看湘江北去","晚上解放西，感受什么叫越夜越长沙"],
+  food:["茶颜悦色","口味虾","臭豆腐"],
+  cost:"中等。吃得便宜玩得嗨，房价在大城市里算清流。"},
+ {n:"扬州",g:"#B58A3E",g2:"#85591C",tag:"早上皮包水，晚上水包皮",
+  v:[-1,-2,0,0,1,1,2,1],
+  why:["你的慢节奏取向，扬州是模板：早茶文化名扬全国，一个早茶能吃两小时。","园林城市，随便一个巷子都有故事，每天逛一块砖都不重样。","生活成本低，节奏温柔，是慢性子退休的天选之城。"],
+  day:["早上茶楼：烫干丝+蟹黄汤包，慢慢来","下午个园何园轮着逛，看竹看假山","晚上澡堂泡澡，水包皮解千乏"],
+  food:["蟹黄汤包","烫干丝","扬州炒饭"],
+  cost:"低。物价温柔，适合把日子过成散文的人。"},
+ {n:"泉州",g:"#C4763E",g2:"#8C4A1C",tag:"半城烟火半城仙",
+  v:[2,1,0,0,-1,0,1,1],
+  why:["你要烟火气也要点文化底蕴——泉州是世遗之城，庙宇和海都在身边。","半城烟火半城仙：早上拜佛，下午吃面线糊，晚上看海。","物价友好，闽南生活圈温暖浓郁，来了就是自己人。"],
+  day:["早上开元寺上香，看东西塔","下午西街骑楼串门，姜母鸭味飘一路","晚上去崇武古城看海日落"],
+  food:["面线糊","姜母鸭","土笋冻"],
+  cost:"低。闽南物价厚道，信仰和烟火齐飞。"},
+ {n:"大连",g:"#4A6BC4",g2:"#2A4490",tag:"北方明珠，广场与海",
+  v:[2,2,1,-2,-1,0,1,0],
+  why:["你要海+凉+精致三件套——大连夏天不超30℃，广场多到能天天换场地遛弯。","俄式建筑+滨海路，城市颜值在线，广场舞都跳得有排面。","海鲜+烧烤双修，医疗配套齐全，是北方退休的优选。"],
+  day:["早上星海广场喂海鸥，风大到发型自由","下午滨海路木栈道徒步，一步一景","晚上吃海鲜焖子，配大连老酸奶"],
+  food:["海鲜焖子","铁板鱿鱼","大连老酸奶"],
+  cost:"中等。物价适中，冬天有雪但海风略硬，备好羽绒服。"},
+ {n:"广州",g:"#C43E3E",g2:"#7E1F1F",tag:"不想跨省的广东人本命",
+  v:[0,2,2,1,-1,2,0,1],
+  why:["不想跨省的广东人看过来——医疗、交通、菜市场都是顶配，但退休后节奏可以自己调。","早茶能从七点坐到中午，一盅两件就是退休的全部仪式感。","老城区人情味浓，楼下的肠粉店老板记得你「唔要葱」。"],
+  day:["早上去茶楼开位，虾饺凤爪慢慢叹","下午逛老西关，顺路斩料加菜","晚上珠江边散步，看小蛮腰亮灯"],
+  food:["虾饺","烧鹅","艇仔粥"],
+  cost:"中等偏高。老城区房租尚可，吃的丰俭由人，医疗资源全国第一梯队。"},
+ {n:"三亚",g:"#2FA0C4",g2:"#166B8C",tag:"东北人的第二个家",
+  v:[2,2,1,2,-1,0,1,0],
+  why:["你在北方过了够多冬天——三亚一月也有26℃，候鸟老人比本地人还多。","东北菜馆、东北口音、广场舞军团，来了像没出省，冬天照样热闹。","海景通勤：下楼就是沙滩，遛弯顺便看了个日落。"],
+  day:["清晨椰梦长廊散步，顺路捡贝壳","下午大东海树荫下乘凉，看人游泳","晚上第一市场买海鲜，找店加工"],
+  food:["清补凉","和乐蟹","椰子鸡"],
+  cost:"中等偏高。旅游区物价虚高，本地菜市场便宜，旺季房租会翻倍。"},
+ {n:"海口",g:"#3E9B8C",g2:"#1F6B5C",tag:"比三亚便宜，比想象中好玩",
+  v:[2,1,0,2,0,2,1,1],
+  why:["想要海南的暖，又嫌三亚贵——海口是性价比答案。","骑楼老街+老爸茶，退休生活自带慢镜头。","省会配套齐全，医疗交通都是海南顶配。"],
+  day:["早上老爸茶店，一壶茶配点心能坐一上午","下午骑楼老街扫街拍照","晚上海大南门夜市，从街头吃到街尾"],
+  food:["海南粉","清补凉","老爸茶"],
+  cost:"低。比三亚便宜一截，房租友好，台风季记得关好窗。"},
+ {n:"厦门",g:"#3EC4A0",g2:"#1F8C6E",tag:"文艺浓度超标的海岛",
+  v:[2,0,1,1,2,1,1,1],
+  why:["你要文艺又要海——厦门把两样都给齐了，还附赠干净。","环岛路骑行、鼓浪屿漫步，每天都是度假状态。","城市小而精致，看病买菜骑车十分钟全搞定。"],
+  day:["早上八市买海鲜，顺路吃碗沙茶面","下午环岛路骑行，海风免费供应","晚上白城沙滩踩沙，看对岸鼓浪屿"],
+  food:["沙茶面","海蛎煎","土笋冻"],
+  cost:"中等偏高。岛内房价是硬伤，岛外便宜不少。"},
+ {n:"青岛",g:"#C46E3E",g2:"#8C451F",tag:"红瓦绿树，啤酒配海",
+  v:[2,1,1,-1,1,1,0,0],
+  why:["你要海+凉+大城市感——青岛夏天28℃，海水浴场管够。","红瓦绿树碧海蓝天，随手一拍就是明信片。","散装啤酒按袋打，海鲜配啤酒是正式医疗行为（并不是）。"],
+  day:["早上栈桥喂海鸥，顺路买袋散啤","下午八大关散步，看老建筑","晚上营口路市场买海鲜，找店加工"],
+  food:["袋装散啤","辣炒蛤蜊","鲅鱼水饺"],
+  cost:"中等。市区房租适中，海景是白送的。"},
+ {n:"鹤岗",g:"#6E7A8C",g2:"#3E485C",tag:"全网最便宜，低欲望养老圣地",
+  v:[-2,-2,-2,-2,-1,-1,2,-1],
+  why:["你的核心诉求就俩字：便宜——鹤岗几万块安个家，物价低到怀疑回到2008年。","安静到能听见雪落，没有内卷没有内耗，只有暖气和炖菜。","适合躺平型选手：网络通了、外卖有了、暖气烧得足足的。"],
+  day:["早上睡到自然醒，楼下吃碗热汤面","下午雪地里散步，买冻梨冻柿子","晚上暖气房里炖菜配小酒，看窗外的雪"],
+  food:["铁锅炖","冻梨","小鸡炖蘑菇"],
+  cost:"极低。房价全国洼地，物价白菜，唯一成本是冬天出门靠勇气。"}
+];
+/* ========= 24 道题 ========= */
+var Q=[
+ {t:"退休后的第一顿早餐：",o:[
+   {x:"菜市场口的米粉摊，老板都认识你",d:[["B",2],["E",-1]]},
+   {x:"阳台牛奶面包，窗外是无边海景",d:[["A",2],["C",1]]},
+   {x:"茶楼一盅两件，坐够两个钟",d:[["E",2],["B",-1],["G",2]]},
+   {x:"在家对付一口，省钱大过天",d:[["C",-2],["G",1]]}]},
+ {t:"退休房的窗外风景，你选：",o:[
+   {x:"睁眼就是海，浪声当白噪音",d:[["A",2]]},
+   {x:"满眼青山，云比楼高",d:[["A",-2],["F",-1]]},
+   {x:"江景霓虹，住在城市心脏",d:[["F",2],["C",1]]},
+   {x:"楼下就是烟火老街",d:[["B",2],["F",-1]]}]},
+ {t:"天气上的终极诉求：",o:[
+   {x:"一年四季短袖，怕冷星人",d:[["D",2]]},
+   {x:"凉爽最舒服，怕热不怕冷",d:[["D",-2]]},
+   {x:"四季分明，冬天最好有雪",d:[["D",-2],["A",1]]},
+   {x:"不冷不热，恒温春秋",d:[["D",1],["E",1]]}]},
+ {t:"日常出门方式：",o:[
+   {x:"一辆电瓶车走天下",d:[["B",-1],["C",-1],["F",-1]]},
+   {x:"地铁公交四通八达",d:[["C",2],["F",1]]},
+   {x:"走路就能到菜场和公园",d:[["C",-1],["B",1]]}]},
+ {t:"你的退休搭子是：",o:[
+   {x:"一群跳广场舞的邻居",d:[["B",2],["E",-1]]},
+   {x:"咖啡馆里聊摄影的老炮",d:[["E",2],["B",-1]]},
+   {x:"天天组局钓鱼的老乡群",d:[["F",-2]]},
+   {x:"独来独往，猫就是全家",d:[["B",-2]]}]},
+ {t:"对看病这件事：",o:[
+   {x:"三甲医院要近，年年体检",d:[["C",2]]},
+   {x:"小病自己扛，大病再说",d:[["C",-2]]},
+   {x:"社区医院能解决就行",d:[["C",-1],["B",1]]}]},
+ {t:"退休后的晚上：",o:[
+   {x:"夜市撸串，越闹越好",d:[["B",2],["H",-1]]},
+   {x:"海边散步听浪",d:[["A",2],["B",-1]]},
+   {x:"书房看书，十点就睡",d:[["B",-2],["E",1],["G",2]]},
+   {x:"广场舞C位预定",d:[["B",1],["F",-1]]}]},
+ {t:"存款心态：",o:[
+   {x:"物价低是王道，奶茶五块封顶",d:[["C",-2]]},
+   {x:"贵一点没事，便利要紧",d:[["C",2],["F",1]]},
+   {x:"自己种菜，自给自足",d:[["F",-2],["C",-1]]}]},
+ {t:"恶劣天气，你能接受：",o:[
+   {x:"台风天封窗看海",d:[["A",2],["D",1]]},
+   {x:"回南天湿一湿无所谓",d:[["D",1]]},
+   {x:"冬天的雪都是浪漫",d:[["D",-2]]},
+   {x:"都不行，我要恒温",d:[["D",1],["E",1]]}]},
+ {t:"退休穿搭：",o:[
+   {x:"花衬衫人字拖",d:[["D",2],["F",-1]]},
+   {x:"冲锋衣登山鞋",d:[["F",-2],["D",-1]]},
+   {x:"衬衫西裤，讲究人",d:[["F",2],["C",1]]},
+   {x:"棉麻舒服就行",d:[["E",1],["B",-1]]}]},
+ {t:"手机相册拍最多的是：",o:[
+   {x:"海和日落",d:[["A",2],["E",1]]},
+   {x:"山和云",d:[["A",-2],["F",-1]]},
+   {x:"街头的小人物",d:[["B",2],["E",-1]]},
+   {x:"花市的花",d:[["E",1],["D",1]]}]},
+ {t:"退休后谁来串门：",o:[
+   {x:"老同事老同学，组局就到",d:[["B",2]]},
+   {x:"子女周末来，附近要有机场高铁",d:[["C",2]]},
+   {x:"没人找最好，清净",d:[["B",-2]]},
+   {x:"网友面基，聊得来就行",d:[["E",2]]},
+   {x:"不想离家太远，熟人社会最自在",d:[["B",1],["C",1],["G",1]]}]},
+ {t:"理想的一天时间表：",o:[
+   {x:"买菜—午睡—麻将，铁三角",d:[["B",2],["F",-1],["G",2],["H",-1]]},
+   {x:"上午写字画画，下午茶",d:[["E",2],["G",2]]},
+   {x:"全天按心情，随缘",d:[["B",-1],["E",1],["G",1]]},
+   {x:"早晚各一场运动打卡",d:[["F",1],["C",-1],["G",-1]]}]},
+ {t:"对「生活配套」的要求：",o:[
+   {x:"落户、医疗、超市都要成熟",d:[["C",2],["F",1]]},
+   {x:"有点远有点偏没关系",d:[["C",-2],["F",-1]]},
+   {x:"小镇但设施齐全最好",d:[["C",-1],["B",1]]}]},
+ {t:"你的退休宣言：",o:[
+   {x:"人生海海，我要看海",d:[["A",2]]},
+   {x:"大隐隐于市",d:[["F",1],["B",1]]},
+   {x:"归园田居，种豆南山",d:[["F",-2],["A",-1]]},
+   {x:"此心安处是吾乡",d:[["E",1],["B",-1]]}]},
+ {t:"餐桌上的本命口味：",o:[
+   {x:"无辣不欢，辣椒是本命",d:[["H",-2]]},
+   {x:"清蒸白灼，吃个原味",d:[["H",2]]},
+   {x:"糕点甜口，点心当饭",d:[["H",1],["E",1]]},
+   {x:"铁锅炖菜，量大管饱",d:[["H",-1],["C",-1]]}]},
+ {t:"退休大厨上线，你的做饭风格：",o:[
+   {x:"天天逛菜市场，现买现做",d:[["C",-1],["B",1]]},
+   {x:"下馆子和外卖轮着来",d:[["C",2],["H",-1]]},
+   {x:"阳台种菜，自给自足",d:[["F",-1],["C",-1]]}]},
+ {t:"每月房租/生活费预算：",o:[
+   {x:"能省则省，一千五封顶",d:[["C",-2]]},
+   {x:"两三千，住得舒服要紧",d:[["C",1]]},
+   {x:"预算上不封顶，品质第一",d:[["C",2],["F",1]]}]},
+ {t:"退休后的闹钟：",o:[
+   {x:"没有闹钟，自然醒",d:[["G",2]]},
+   {x:"雷打不动六点半，晨练打卡",d:[["G",-1],["F",1]]},
+   {x:"有局才起，没局补觉",d:[["G",1],["B",1]]}]},
+ {t:"夜生活还要不要：",o:[
+   {x:"十点前必须睡，养生第一",d:[["G",2],["B",-1]]},
+   {x:"夜宵摊是我的第二客厅",d:[["B",2],["G",-2],["H",-1]]},
+   {x:"追剧刷手机到十二点",d:[["G",-1],["B",-1]]}]},
+ {t:"退休主修兴趣班：",o:[
+   {x:"钓鱼徒步，往山里跑",d:[["F",-2],["A",-1]]},
+   {x:"书法摄影，往沙龙跑",d:[["E",2]]},
+   {x:"广场舞合唱团，往人多处跑",d:[["B",2],["E",-1]]},
+   {x:"赶海冲浪，往海边跑",d:[["A",2],["D",1]]}]},
+ {t:"到了新城市，方言这关：",o:[
+   {x:"只说普通话，方言听力困难",d:[["F",1]]},
+   {x:"学两句本地话，融入快乐加倍",d:[["B",2],["E",-1]]},
+   {x:"无所谓，反正我宅着",d:[["B",-1],["G",2]]}]},
+ {t:"每年最惦记的一件事：",o:[
+   {x:"冬天必须暖和，候鸟式生活",d:[["D",2],["A",1]]},
+   {x:"夏天必须凉快，避暑是刚需",d:[["D",-2]]},
+   {x:"四季分明才有过节的感觉",d:[["D",-1],["E",1]]}]},
+ {t:"城市级别，你的选择：",o:[
+   {x:"大城市，三甲和大商场都要有",d:[["F",2],["C",2]]},
+   {x:"中小城市刚好，不挤不贵",d:[["F",-1],["C",-1]]},
+   {x:"小城小镇，越安逸越好",d:[["F",-2],["C",-1],["B",-1]]}]}
+];
+var AXN={A:"海滨",B:"烟火",C:"便利",D:"温暖",E:"文艺",F:"都市",G:"节奏",H:"口味"};
+/* ========= 18 张城市插画 ========= */
+var ART=["<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s1\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#C9B4E8\"/><stop offset=\"1\" stop-color=\"#8F7CC9\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s1)\"/><circle cx=\"330\" cy=\"48\" r=\"34\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"48\" r=\"20\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(70 44) scale(1)\" opacity=\"0.7\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M0 122 L80 66 L160 122 Z\" fill=\"#6A4CAD\" opacity=\".6\"/><path d=\"M140 122 L228 56 L316 122 Z\" fill=\"#5A3C9E\" opacity=\".8\"/><path d=\"M280 122 L352 74 L400 122 Z\" fill=\"#6A4CAD\" opacity=\".6\"/><path d=\"M222 118 L228 88 L234 118 Z\" fill=\"#FFF6E3\"/><path d=\"M214 118 L219 98 L224 118 Z\" fill=\"#FFF6E3\"/><path d=\"M232 118 L237 98 L242 118 Z\" fill=\"#FFF6E3\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#9F8CD6\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s2\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#FFB88A\"/><stop offset=\"1\" stop-color=\"#E86A3A\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s2)\"/><g transform=\"translate(80 40) scale(0.8)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M168 118 q5 -14 0 -26 M200 114 q5 -16 0 -30 M232 118 q5 -14 0 -26\" stroke=\"#FFF6E3\" stroke-width=\"5\" fill=\"none\" opacity=\".55\" stroke-linecap=\"round\"/><ellipse cx=\"200\" cy=\"142\" rx=\"74\" ry=\"16\" fill=\"#7E2410\"/><path d=\"M132 142 H268 V158 Q268 172 250 172 H150 Q132 172 132 158 Z\" fill=\"#A33318\"/><ellipse cx=\"200\" cy=\"142\" rx=\"60\" ry=\"11\" fill=\"#E04A2A\"/><circle cx=\"176\" cy=\"141\" r=\"4\" fill=\"#FF7A50\"/><circle cx=\"210\" cy=\"144\" r=\"4\" fill=\"#FF7A50\"/><circle cx=\"228\" cy=\"140\" r=\"3.5\" fill=\"#FFB27A\"/><path d=\"M0 158 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#C25328\"/><ellipse cx=\"330\" cy=\"182\" rx=\"34\" ry=\"9\" fill=\"#8C3A18\"/><ellipse cx=\"60\" cy=\"184\" rx=\"28\" ry=\"8\" fill=\"#8C3A18\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s3\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#BFE4C8\"/><stop offset=\"1\" stop-color=\"#5E9B6E\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s3)\"/><circle cx=\"330\" cy=\"46\" r=\"34\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"46\" r=\"20\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(90 42) scale(0.9)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M0 128 Q120 92 240 128 T400 120 V200 H0 Z\" fill=\"#4A8C5C\"/><g stroke=\"#3A7048\" stroke-width=\"4\"><path d=\"M80 168 V140\"/><path d=\"M150 176 V150\"/><path d=\"M230 170 V146\"/><path d=\"M310 176 V152\"/></g><circle cx=\"80\" cy=\"132\" r=\"13\" fill=\"#FF8AB0\"/><circle cx=\"80\" cy=\"132\" r=\"5\" fill=\"#FFE9B8\"/><circle cx=\"150\" cy=\"142\" r=\"12\" fill=\"#FFD60A\"/><circle cx=\"150\" cy=\"142\" r=\"4.5\" fill=\"#C25328\"/><circle cx=\"230\" cy=\"138\" r=\"13\" fill=\"#FF6B6B\"/><circle cx=\"230\" cy=\"138\" r=\"5\" fill=\"#FFE9B8\"/><circle cx=\"310\" cy=\"144\" r=\"12\" fill=\"#FFF6E3\"/><circle cx=\"310\" cy=\"144\" r=\"4.5\" fill=\"#FFD60A\"/><path d=\"M180 60 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M230 74 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s4\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#BFE0F5\"/><stop offset=\"1\" stop-color=\"#3E7FC1\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s4)\"/><circle cx=\"320\" cy=\"50\" r=\"34\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"320\" cy=\"50\" r=\"20\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(120 42) scale(0.9)\" opacity=\"0.7\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M150 122 L158 64 H186 L194 122 Z\" fill=\"#FFF6E3\"/><rect x=\"156\" y=\"88\" width=\"32\" height=\"12\" fill=\"#FF6B4A\"/><rect x=\"152\" y=\"106\" width=\"38\" height=\"12\" fill=\"#FF6B4A\"/><rect x=\"154\" y=\"52\" width=\"36\" height=\"14\" rx=\"4\" fill=\"#C4502E\"/><circle cx=\"172\" cy=\"59\" r=\"5\" fill=\"#FFE9B8\"/><path d=\"M150 72 L96 58 M194 72 L248 58\" stroke=\"#FFE9B8\" stroke-width=\"4\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#3E7FC1\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M90 80 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M280 90 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s5\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#FFD9A0\"/><stop offset=\"1\" stop-color=\"#F0A03C\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s5)\"/><circle cx=\"200\" cy=\"118\" r=\"44\" fill=\"#FFE9B8\" opacity=\".3\"/><circle cx=\"200\" cy=\"118\" r=\"30\" fill=\"#FFE9B8\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#E8893A\"/><path d=\"M60 136 h280\" stroke=\"#FFF6E3\" stroke-width=\"4\" opacity=\".55\"/><g transform=\"translate(330 150) scale(1.1)\"><path d=\"M0 0 Q-8 -30 2 -62\" stroke=\"#8C4A1C\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-24 -70 -34 -54\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q28 -70 38 -54\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-10 -88 -26 -84\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q14 -88 30 -84\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/></g><g transform=\"translate(48 154) scale(0.95)\"><path d=\"M0 0 Q-8 -30 2 -62\" stroke=\"#8C4A1C\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-24 -70 -34 -54\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q28 -70 38 -54\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-10 -88 -26 -84\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q14 -88 30 -84\" stroke=\"#8C4A1C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/></g><ellipse cx=\"200\" cy=\"186\" rx=\"30\" ry=\"7\" fill=\"#C25328\" opacity=\".5\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s6\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#A8DCE8\"/><stop offset=\"1\" stop-color=\"#3E9BB5\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s6)\"/><circle cx=\"330\" cy=\"46\" r=\"32\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"46\" r=\"18\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(80 40) scale(0.8)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M30 118 Q200 58 370 118\" stroke=\"#FFF6E3\" stroke-width=\"9\" fill=\"none\"/><path d=\"M20 122 H380\" stroke=\"#FFF6E3\" stroke-width=\"7\" stroke-linecap=\"round\"/><g stroke=\"#FFF6E3\" stroke-width=\"3\" opacity=\".7\"><path d=\"M100 116 V122\"/><path d=\"M140 104 V122\"/><path d=\"M200 94 V122\"/><path d=\"M260 104 V122\"/><path d=\"M300 116 V122\"/></g><path d=\"M292 156 L292 138 L310 146 Z\" fill=\"#FFF6E3\"/><path d=\"M288 158 h26\" stroke=\"#FFF6E3\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#3E9BB5\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s7\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#CFE6B8\"/><stop offset=\"1\" stop-color=\"#5E8C3E\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s7)\"/><circle cx=\"320\" cy=\"46\" r=\"32\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"320\" cy=\"46\" r=\"18\" fill=\"#FFE9B8\" opacity=\".95\"/><path d=\"M0 122 L90 58 L180 122 Z\" fill=\"#4A7230\" opacity=\".7\"/><path d=\"M180 122 L290 48 L400 122 Z\" fill=\"#3C6424\" opacity=\".85\"/><path d=\"M300 122 L360 82 L400 122 Z\" fill=\"#4A7230\" opacity=\".6\"/><path d=\"M262 74 Q282 60 302 74 L296 74 Q282 66 268 74 Z\" fill=\"#FFF6E3\" opacity=\".9\"/><rect x=\"276\" y=\"74\" width=\"12\" height=\"18\" fill=\"#FFF6E3\"/><ellipse cx=\"120\" cy=\"120\" rx=\"90\" ry=\"12\" fill=\"#FFF6E3\" opacity=\".35\"/><ellipse cx=\"320\" cy=\"126\" rx=\"80\" ry=\"10\" fill=\"#FFF6E3\" opacity=\".3\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#3C6424\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s8\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#B8E6D0\"/><stop offset=\"1\" stop-color=\"#2E9B7C\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s8)\"/><circle cx=\"330\" cy=\"46\" r=\"32\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"46\" r=\"18\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(70 44) scale(0.9)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M300 122 L314 78 L328 122 Z\" fill=\"#FFD60A\"/><path d=\"M314 78 V66\" stroke=\"#FFD60A\" stroke-width=\"4\" stroke-linecap=\"round\"/><g transform=\"translate(60 150) scale(1.15)\"><path d=\"M0 0 Q-8 -30 2 -62\" stroke=\"#1A6B52\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-24 -70 -34 -54\" stroke=\"#1A6B52\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q28 -70 38 -54\" stroke=\"#1A6B52\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-10 -88 -26 -84\" stroke=\"#1A6B52\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q14 -88 30 -84\" stroke=\"#1A6B52\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/></g><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#2E9B7C\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/><g fill=\"#1A6B52\"><ellipse cx=\"190\" cy=\"158\" rx=\"42\" ry=\"26\"/><circle cx=\"232\" cy=\"146\" r=\"17\"/><path d=\"M244 152 Q258 158 256 172\" stroke=\"#1A6B52\" stroke-width=\"9\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"164\" y=\"168\" width=\"12\" height=\"20\" rx=\"5\"/><rect x=\"196\" y=\"170\" width=\"12\" height=\"18\" rx=\"5\"/></g></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s9\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F5A8C0\"/><stop offset=\"1\" stop-color=\"#9C2450\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s9)\"/><circle cx=\"60\" cy=\"44\" r=\"3.5\" fill=\"#FFF6E3\"/><circle cx=\"110\" cy=\"66\" r=\"2.5\" fill=\"#FFF6E3\"/><circle cx=\"330\" cy=\"40\" r=\"3.5\" fill=\"#FFF6E3\"/><circle cx=\"286\" cy=\"62\" r=\"2.5\" fill=\"#FFF6E3\"/><rect x=\"50\" y=\"72\" width=\"56\" height=\"70\" rx=\"4\" fill=\"#7E1B3E\"/><rect x=\"118\" y=\"94\" width=\"44\" height=\"48\" rx=\"4\" fill=\"#8E2450\"/><rect x=\"250\" y=\"66\" width=\"52\" height=\"76\" rx=\"4\" fill=\"#7E1B3E\"/><rect x=\"310\" y=\"92\" width=\"44\" height=\"52\" rx=\"4\" fill=\"#8E2450\"/><g fill=\"#FFD60A\"><rect x=\"60\" y=\"84\" width=\"9\" height=\"9\" rx=\"2\"/><rect x=\"80\" y=\"100\" width=\"9\" height=\"9\" rx=\"2\"/><rect x=\"262\" y=\"80\" width=\"9\" height=\"9\" rx=\"2\"/><rect x=\"322\" y=\"106\" width=\"9\" height=\"9\" rx=\"2\"/><rect x=\"128\" y=\"106\" width=\"8\" height=\"8\" rx=\"2\"/></g><path d=\"M150 96 q25 20 50 0 q25 -20 50 0\" stroke=\"#FFD60A\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M170 120 l8 0 -2 14 -4 0 Z\" fill=\"#FF6B6B\"/><path d=\"M220 120 l8 0 -2 14 -4 0 Z\" fill=\"#FF6B6B\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#5C1730\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFD60A\" stroke-width=\"3\" fill=\"none\" opacity=\"0.4\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFD60A\" stroke-width=\"3\" fill=\"none\" opacity=\"0.4\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFD60A\" stroke-width=\"3\" fill=\"none\" opacity=\"0.4\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s10\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F5E6C4\"/><stop offset=\"1\" stop-color=\"#B58A3E\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s10)\"/><circle cx=\"330\" cy=\"46\" r=\"32\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"46\" r=\"18\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(80 44) scale(0.9)\" opacity=\"0.65\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M150 100 Q190 72 230 100 L222 100 Q190 84 158 100 Z\" fill=\"#7A5220\"/><rect x=\"164\" y=\"100\" width=\"8\" height=\"24\" fill=\"#7A5220\"/><rect x=\"208\" y=\"100\" width=\"8\" height=\"24\" fill=\"#7A5220\"/><path d=\"M240 122 Q300 96 360 122\" stroke=\"#FFF6E3\" stroke-width=\"8\" fill=\"none\"/><path d=\"M60 90 Q66 110 60 132 M84 86 Q92 108 86 134\" stroke=\"#5E8C3E\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#A8823A\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s11\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#FFDDB8\"/><stop offset=\"1\" stop-color=\"#C4763E\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s11)\"/><circle cx=\"320\" cy=\"48\" r=\"34\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"320\" cy=\"48\" r=\"20\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(70 42) scale(0.8)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><g fill=\"#7A4A1C\"><rect x=\"150\" y=\"72\" width=\"26\" height=\"52\"/><rect x=\"146\" y=\"86\" width=\"34\" height=\"8\"/><rect x=\"148\" y=\"104\" width=\"30\" height=\"8\"/><rect x=\"152\" y=\"62\" width=\"22\" height=\"8\"/><path d=\"M163 54 v10\"/></g><g fill=\"#7A4A1C\"><rect x=\"210\" y=\"72\" width=\"26\" height=\"52\"/><rect x=\"206\" y=\"86\" width=\"34\" height=\"8\"/><rect x=\"208\" y=\"104\" width=\"30\" height=\"8\"/><rect x=\"212\" y=\"62\" width=\"22\" height=\"8\"/><path d=\"M223 54 v10\"/></g><path d=\"M320 150 V112 L344 126 Z\" fill=\"#FFF6E3\"/><path d=\"M312 156 h34\" stroke=\"#FFF6E3\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#A85E28\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M110 70 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s12\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#B8CCF0\"/><stop offset=\"1\" stop-color=\"#4A6BC4\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s12)\"/><circle cx=\"330\" cy=\"46\" r=\"32\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"46\" r=\"18\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(80 44) scale(0.9)\" opacity=\"0.65\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><rect x=\"60\" y=\"70\" width=\"40\" height=\"52\" fill=\"#2A4490\"/><rect x=\"112\" y=\"88\" width=\"30\" height=\"34\" fill=\"#33509E\"/><path d=\"M60 70 L80 52 L100 70 Z\" fill=\"#2A4490\"/><path d=\"M250 122 V96 M250 96 q-16 -10 -20 6 M250 96 q16 -10 20 6 M250 96 v-18\" stroke=\"#FFF6E3\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"250\" cy=\"122\" rx=\"30\" ry=\"7\" fill=\"#FFF6E3\" opacity=\".5\"/><path d=\"M150 60 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M200 74 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M310 66 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#4A6BC4\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s13\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F5C0B8\"/><stop offset=\"1\" stop-color=\"#C43E3E\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s13)\"/><g transform=\"translate(80 42) scale(0.9)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M272 52 C262 84 270 104 266 122 L296 122 C292 104 300 84 290 52 Z\" fill=\"#7E1F1F\"/><path d=\"M281 52 V30\" stroke=\"#7E1F1F\" stroke-width=\"5\" stroke-linecap=\"round\"/><g fill=\"#FFD60A\"><circle cx=\"280\" cy=\"70\" r=\"3\"/><circle cx=\"283\" cy=\"92\" r=\"3\"/><circle cx=\"279\" cy=\"110\" r=\"3\"/></g><rect x=\"60\" y=\"92\" width=\"44\" height=\"32\" fill=\"#8E2A2A\"/><rect x=\"116\" y=\"100\" width=\"34\" height=\"24\" fill=\"#9C3232\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#A83333\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M150 58 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s14\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#A8E4F5\"/><stop offset=\"1\" stop-color=\"#2FA0C4\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s14)\"/><circle cx=\"200\" cy=\"52\" r=\"38\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"200\" cy=\"52\" r=\"24\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(70 58) scale(1)\" opacity=\"0.7\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><g transform=\"translate(330 72) scale(0.8)\" opacity=\"0.55\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><g transform=\"translate(84 152) scale(1.25)\"><path d=\"M0 0 Q-8 -30 2 -62\" stroke=\"#1F6B8C\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-24 -70 -34 -54\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q28 -70 38 -54\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-10 -88 -26 -84\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q14 -88 30 -84\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/></g><g transform=\"translate(320 156) scale(1.05)\"><path d=\"M0 0 Q-8 -30 2 -62\" stroke=\"#1F6B8C\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-24 -70 -34 -54\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q28 -70 38 -54\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-10 -88 -26 -84\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q14 -88 30 -84\" stroke=\"#1F6B8C\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/></g><path d=\"M0 138 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#FFE9C4\"/><path d=\"M120 168 q14 -9 28 0 t28 0\" stroke=\"#2FA0C4\" stroke-width=\"4\" fill=\"none\" opacity=\".6\" stroke-linecap=\"round\"/><circle cx=\"250\" cy=\"176\" r=\"7\" fill=\"#FFB27A\"/><path d=\"M250 176 l7 -4\" stroke=\"#C4502E\" stroke-width=\"2.5\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s15\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#C4EED8\"/><stop offset=\"1\" stop-color=\"#3E9B8C\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s15)\"/><circle cx=\"330\" cy=\"46\" r=\"32\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"46\" r=\"18\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(80 44) scale(0.9)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><rect x=\"120\" y=\"70\" width=\"160\" height=\"54\" rx=\"4\" fill=\"#1F6B5C\"/><path d=\"M120 70 h160 v-6 h-160 Z\" fill=\"#175246\"/><g fill=\"#FFF6E3\"><path d=\"M140 124 v-20 a10 10 0 0 1 20 0 v20 Z\"/><path d=\"M190 124 v-20 a10 10 0 0 1 20 0 v20 Z\"/><path d=\"M240 124 v-20 a10 10 0 0 1 20 0 v20 Z\"/></g><rect x=\"252\" y=\"46\" width=\"6\" height=\"24\" fill=\"#175246\"/><circle cx=\"255\" cy=\"44\" r=\"7\" fill=\"#FFD60A\"/><g transform=\"translate(48 150) scale(1.05)\"><path d=\"M0 0 Q-8 -30 2 -62\" stroke=\"#175246\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-24 -70 -34 -54\" stroke=\"#175246\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q28 -70 38 -54\" stroke=\"#175246\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q-10 -88 -26 -84\" stroke=\"#175246\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M2 -62 Q14 -88 30 -84\" stroke=\"#175246\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/></g><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#2E7A6C\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.35\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s16\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#B8F0DC\"/><stop offset=\"1\" stop-color=\"#3EC4A0\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s16)\"/><circle cx=\"330\" cy=\"46\" r=\"32\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"330\" cy=\"46\" r=\"18\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(90 44) scale(0.9)\" opacity=\"0.65\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M0 128 Q140 96 400 128 V200 H0 Z\" fill=\"#2E9B80\"/><g><rect x=\"120\" y=\"94\" width=\"36\" height=\"34\" fill=\"#FFF6E3\"/><path d=\"M114 94 L138 72 L162 94 Z\" fill=\"#D44242\"/><rect x=\"170\" y=\"102\" width=\"30\" height=\"28\" fill=\"#FFF6E3\"/><path d=\"M165 102 L185 84 L205 102 Z\" fill=\"#C4502E\"/><rect x=\"212\" y=\"92\" width=\"34\" height=\"36\" fill=\"#FFF6E3\"/><path d=\"M206 92 L229 70 L252 92 Z\" fill=\"#D44242\"/></g><path d=\"M282 60 q9 -10 18 0 q9 -10 18 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s17\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F5D0B0\"/><stop offset=\"1\" stop-color=\"#C46E3E\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s17)\"/><circle cx=\"320\" cy=\"48\" r=\"34\" fill=\"#FFE9B8\" opacity=\".25\"/><circle cx=\"320\" cy=\"48\" r=\"20\" fill=\"#FFE9B8\" opacity=\".95\"/><g transform=\"translate(70 44) scale(0.8)\" opacity=\"0.6\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><g><rect x=\"56\" y=\"92\" width=\"40\" height=\"32\" fill=\"#FFF6E3\"/><path d=\"M50 92 L76 70 L102 92 Z\" fill=\"#C44A2E\"/><rect x=\"70\" y=\"104\" width=\"12\" height=\"12\" fill=\"#8C451F\"/><rect x=\"110\" y=\"98\" width=\"34\" height=\"28\" fill=\"#FFF6E3\"/><path d=\"M105 98 L127 78 L149 98 Z\" fill=\"#D4563A\"/></g><path d=\"M220 122 H360\" stroke=\"#FFF6E3\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"352\" y=\"94\" width=\"20\" height=\"28\" fill=\"#FFF6E3\"/><path d=\"M348 94 L362 80 L376 94 Z\" fill=\"#C44A2E\"/><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#A85E28\"/><path d=\"M40 158 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M180 172 q14 -9 28 0 t28 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M300 156 q12 -8 24 0\" stroke=\"#FFF6E3\" stroke-width=\"3\" fill=\"none\" opacity=\".5\" stroke-linecap=\"round\"/><path d=\"M250 58 q7 -8 14 0 q7 -8 14 0\" stroke=\"#FFF6E3\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/></svg>", "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\"><defs><linearGradient id=\"s18\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#DCE6F2\"/><stop offset=\"1\" stop-color=\"#6E7A8C\"/></linearGradient></defs><rect width=\"400\" height=\"200\" rx=\"18\" fill=\"url(#s18)\"/><g transform=\"translate(90 40) scale(1)\" opacity=\"0.8\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><g transform=\"translate(300 50) scale(0.9)\" opacity=\"0.7\"><ellipse cx=\"0\" cy=\"0\" rx=\"26\" ry=\"10\" fill=\"#FFF6E3\"/><circle cx=\"-10\" cy=\"-6\" r=\"9\" fill=\"#FFF6E3\"/><circle cx=\"8\" cy=\"-7\" r=\"11\" fill=\"#FFF6E3\"/></g><path d=\"M150 124 V92 L190 64 L230 92 V124 Z\" fill=\"#FFF6E3\"/><rect x=\"170\" y=\"34\" width=\"10\" height=\"26\" fill=\"#4A5568\"/><path d=\"M174 34 q-10 -10 0 -18 q10 -8 0 -16\" stroke=\"#FFF6E3\" stroke-width=\"4\" fill=\"none\" opacity=\".7\" stroke-linecap=\"round\"/><rect x=\"178\" y=\"98\" width=\"24\" height=\"22\" rx=\"3\" fill=\"#FFD60A\"/><path d=\"M190 98 v22 M178 109 h24\" stroke=\"#C4763E\" stroke-width=\"2.5\"/><g fill=\"#FFF6E3\"><circle cx=\"60\" cy=\"70\" r=\"3\"/><circle cx=\"120\" cy=\"50\" r=\"2.5\"/><circle cx=\"350\" cy=\"60\" r=\"3\"/><circle cx=\"40\" cy=\"110\" r=\"2.5\"/><circle cx=\"230\" cy=\"44\" r=\"2.5\"/></g><path d=\"M0 122 H400 V180 Q400 200 380 200 H20 Q0 200 0 180 Z\" fill=\"#E8EEF5\"/><circle cx=\"290\" cy=\"176\" r=\"14\" fill=\"#FFF6E3\"/><circle cx=\"290\" cy=\"160\" r=\"10\" fill=\"#FFF6E3\"/><circle cx=\"286\" cy=\"158\" r=\"2\" fill=\"#3A2E1E\"/><circle cx=\"294\" cy=\"158\" r=\"2\" fill=\"#3A2E1E\"/><path d=\"M286 163 h8 l-3 3 Z\" fill=\"#FF8A5C\"/></svg>"];
+/* ========= 引擎 ========= */
+var idx=0,answers=[];
+function $(id){return document.getElementById(id)}
+function show(p){["pHome","pQuiz","pResult"].forEach(function(x){$(x).classList.add("hide")});$(p).classList.remove("hide")}
+function start(){idx=0;answers=[];show("pQuiz");render()}
+function render(){
+  var q=Q[idx];
+  $("qNum").textContent="第 "+(idx+1)+" / "+Q.length+" 题";
+  $("qBar").style.width=Math.round((idx+1)/Q.length*100)+"%";
+  $("qText").textContent=q.t;
+  var h="";
+  q.o.forEach(function(o,i){h+='<button class="opt" onclick="pick('+i+')">'+o.x+"</button>"});
+  $("qOpts").innerHTML=h;
+}
+function pick(i){
+  answers.push(i);
+  idx++;
+  if(idx>=Q.length){result()}else{render()}
+}
+function calcUser(){
+  var user={A:0,B:0,C:0,D:0,E:0,F:0,G:0,H:0};
+  answers.forEach(function(ai,qi){
+    Q[qi].o[ai].d.forEach(function(m){user[m[0]]+=m[1]});
+  });
+  /* 归一化到城市向量同一量纲（-2~2），避免题量变大后适配度触底 */
+  var keys="ABCDEFGH".split(""),mx=1;
+  keys.forEach(function(k){mx=Math.max(mx,Math.abs(user[k]))});
+  var su={};
+  keys.forEach(function(k){su[k]=user[k]/mx*2});
+  return {raw:user,su:su};
+}
+function dist(su,c){
+  var d=0;"ABCDEFGH".split("").forEach(function(k,i){d+=Math.abs(su[k]-c.v[i])});
+  return d;
+}
+function result(){
+  if(gateOpen()){resultReal()}else{gateShow()}
+}
+function resultReal(){
+  var u=calcUser(),user=u.raw,su=u.su;
+  var ranked=CITIES.map(function(c){return {c:c,d:dist(su,c)}}).sort(function(a,b){return a.d-b.d});
+  var top=ranked[0],alt=ranked[1],alt2=ranked[2],bad=ranked[ranked.length-1];
+  var fit=Math.max(58,Math.min(98,Math.round(100-top.d*2.8)));
+  $("heroBg").style.background="linear-gradient(160deg,"+top.c.g+","+top.c.g2+")";
+  $("rScene").innerHTML=ART[CITIES.indexOf(top.c)];
+  $("rCity").textContent=top.c.n;
+  $("rTag").textContent=top.c.tag;
+  $("rFit").textContent=fit+"%";
+  var wh="";top.c.why.forEach(function(x){wh+='<div class="sym">'+x+"</div>"});$("rWhy").innerHTML=wh;
+  var dd="";
+  ["早上","下午","晚上"].forEach(function(t,i){dd+='<div class="day"><div class="t">'+t+'</div><div class="d">'+top.c.day[i]+"</div></div>"});
+  $("rDay").innerHTML=dd;
+  var ff="";top.c.food.forEach(function(x){ff+="<span>"+x+"</span>"});$("rFood").innerHTML=ff;
+  $("rCost").textContent="【"+top.c.n+"物价印象】"+top.c.cost;
+  $("rAlt").textContent=alt.c.n+" · "+alt.c.tag;
+  $("rAltNote").textContent="和"+top.c.n+"气质相近，可作第二站考察。";
+  $("rAlt2").textContent=alt2.c.n+" · "+alt2.c.tag;
+  $("rAlt2Note").textContent="换个口味也不错，适合双城旅居。";
+  $("rWarn").textContent="【最不适配】"+bad.c.n+"——"+warnLine(bad.c,su)+"";
+  $("scName").textContent="退休去 "+top.c.n;
+  $("scLine").textContent="“"+top.c.tag+"”";
+  $("scFit").textContent="生活方式适配度 "+fit+"% · 备选 "+alt.c.n;
+  window._shareText="测了24道题，我的退休本命城市是"+top.c.n+"，适配度"+fit+"%，"+top.c.tag+" 你退休去哪？";
+  show("pResult");
+  window.scrollTo(0,0);
+}
+function warnLine(c,su){
+  /* 根据用户向量和城市最冲突的维度，生成个性化慎入理由 */
+  var msgs={A:[c.v[0]>0?"你不是海派，看三天海就腻了":"你在内陆活得很滋润，去了水边反而不适应"],
+            B:[c.v[1]>0?"它的热闹会把你吵到失眠":"它的安静会把你闷到数落叶"],
+            C:[c.v[2]>0?"物价和房租会掏空你的退休金":"配套不够成熟，看病要出城"],
+            D:[c.v[3]>0?"它的温暖对你是桑拿":"它的冬天对你是渡劫"],
+            E:[c.v[4]>0?"文艺浓度过高，你会水土不服":"你受不了全是麻将声的生活"],
+            F:[c.v[5]>0?"城市太精致，你会觉得贵":"野趣太多，你会想念外卖"],
+            G:[c.v[6]>0?"慢节奏会让你怀疑人生在原地打转":"快节奏让你退休了还得赶场"],
+            H:[c.v[7]>0?"全城清淡口味，你会想念辣椒":"重口味全席，你的胃会第一个抗议"]};
+  var worst=0,wd=-1;
+  "ABCDEFGH".split("").forEach(function(k,i){
+    var d=Math.abs(su[k]-c.v[i]);
+    if(d>wd){wd=d;worst=i}
+  });
+  return msgs["ABCDEFGH"[worst]][0];
+}
+function shareIt(){
+  var t=window._shareText||"退休城市匹配";
+  if(navigator&&navigator.share){navigator.share({title:"退休城市匹配",text:t}).catch(function(){});}
+  else{alert("长按复制：\n\n"+t);}
+}
+
+/* ===== 激活码门禁 ===== */
+var GATE_CODE="TUIXIU-2026",GATE_STORE="gate_ok_tuixiu";
+function gateOpen(){try{return sessionStorage.getItem(GATE_STORE)===GATE_CODE||new URLSearchParams(location.search).get("k")===GATE_CODE}catch(e){return false}}
+function gateReveal(){resultReal()}
+function gateShow(){
+  if(!document.getElementById("gate")){
+    document.body.insertAdjacentHTML("beforeend","<div id='gate' class='ghide'><div class='gcard'><div style='font-size:34px'>🔒</div><div class='gtitle'>完整报告已封存</div><div class='gdesc'>你的退休城市匹配报告已经生成！<br>输入激活码立即查看完整报告</div><div class='grow'><input id='gateKey' placeholder='输入激活码' onkeydown=\"if(event.key==='Enter')gateUnlock()\"><button onclick='gateUnlock()'>解锁</button></div><div class='gerr' id='gateErr'></div><div class='gbuy'>还没拿到激活码？到小红书商品页拍下，秒发激活码 🐸</div></div></div>");
+  }
+  document.getElementById("gate").classList.remove("ghide");
+  window.scrollTo(0,0);
+}
+function gateUnlock(){
+  var v=(document.getElementById("gateKey").value||"").trim().toUpperCase();
+  if(!v){document.getElementById("gateErr").textContent="先输入激活码哦～";return;}
+  if(v===GATE_CODE.toUpperCase()){
+    try{sessionStorage.setItem(GATE_STORE,GATE_CODE)}catch(e){}
+    document.getElementById("gate").classList.add("ghide");
+    gateReveal();
+  }else{
+    document.getElementById("gateErr").textContent="激活码不对哦～请核对后重试，或到小红书商品页拍下获取 🐸";
+  }
+}
+</script>
+</body>
+</html>
